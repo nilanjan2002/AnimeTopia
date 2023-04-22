@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import MovieCard from "./MovieCard";
+import AnimeCard from "./AnimeCard";
 import SearchIcon from "./search.svg";
 import "./App.css";
 
@@ -10,7 +10,7 @@ const API_URI = "https://api.jikan.moe/v4/anime";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [movies, setMovies] = useState([]);
+  const [animes, setMovies] = useState([]);
 
   useEffect(() => {
     searchMovies("Death Note");
@@ -51,10 +51,10 @@ const App = () => {
         />
       </div>
 
-      {movies?.length > 0 ? (
+      {animes?.length > 0 ? (
         <div className="container">
-          {movies.map((movie) => (
-            <MovieCard movie={movie} />
+          {animes.map((anime) => (
+            <AnimeCard anime={anime} />
           ))}
         </div>
       ) : (

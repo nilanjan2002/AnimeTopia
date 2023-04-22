@@ -1,13 +1,13 @@
 import React from 'react';
 
-const MovieCard = ({ movie }) => {
-  const poster = (movie.images.jpg.image_url);
-  const title = movie.title;
-  const type = movie.type;
+const AnimeCard = ({ anime }) => {
+  const poster = (anime.images.jpg.image_url);
+  const title = anime.title;
+  const type = anime.type;
   return (
-    <div className="movie" key={movie.mal_id}>
+    <div className="anime" key={anime.mal_id}>
       <div>
-        <p>{movie.year}</p>
+        <p>{anime.year}</p>
       </div>
 
       <div>
@@ -22,4 +22,4 @@ const MovieCard = ({ movie }) => {
   );
 }
 
-export default MovieCard;
+export default AnimeCard;
