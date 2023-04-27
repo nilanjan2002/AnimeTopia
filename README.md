@@ -17,4 +17,4 @@
 </ul>
 
 <h2>SCREENSHOT</h2>
-<img src="./Screenshot 2023-04-27 at 4.35.22 PM.png"></img>
+<img src="./Screenshot 2023-04-27 at 4.35.46 PM.png"></img>
